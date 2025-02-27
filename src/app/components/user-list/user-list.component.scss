@@ -1,0 +1,15 @@
+/* filepath: /e:/Elder/Trabalho/test-folder/taller-challenge-efonseca/user-application/src/app/components/user-list/user-list.component.scss */
+.container {
+  padding: 16px;
+}
+
+mat-grid-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+app-card-user {
+  width: 100%;
+  height: 100%;
+}

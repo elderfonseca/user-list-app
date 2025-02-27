@@ -1,0 +1,11 @@
+<div class="container">
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Search by name</mat-label>
+    <input matInput [formControl]="searchText" />
+  </mat-form-field>
+  <mat-grid-list [cols]="cols()" rowHeight="140px" gutterSize="16px">
+    <mat-grid-tile *ngFor="let user of filteredUsers(); trackBy: trackByUser" @fade>
+      <app-card-user [user]="user"></app-card-user>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
